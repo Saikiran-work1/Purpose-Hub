@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurposeHub - Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up for PurposeHub</h1>
+    <p>Create an account with minimal info for privacy.</p>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      
+      <label for="password">Password (min 6 characters):</label>
+      <input type="password" id="password" required>
+      
+      <label for="securityQuestion">Security Question (for password recovery):</label>
+      <input type="text" id="securityQuestion" placeholder="e.g., What is your pet's name?" required>
+      
+      <label for="securityAnswer">Answer:</label>
+      <input type="text" id="securityAnswer" required>
+      
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+    <div id="message"></div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>

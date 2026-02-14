@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Post</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Create a Post</h1>
+
+  <form id="postForm" enctype="multipart/form-data">
+    
+    <textarea id="postContent"
+              placeholder="Write something..."
+              required></textarea>
+
+    <select id="postCategory">
+      <option value="study">Study</option>
+      <option value="research">Research</option>
+      <option value="chat">Chat</option>
+    </select>
+
+    <input type="file" id="postFile" />
+
+    <button type="submit">Post</button>
+  </form>
+
+  <br>
+  <button onclick="window.location.href='dashboard.html'">
+    Back to Dashboard
+  </button>
+</div>
+
+<script src="createPost.js"></script>
+window.location.href = "dashboard.html";
+
+</body>
+</html>

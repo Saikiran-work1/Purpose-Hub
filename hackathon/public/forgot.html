@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurposeHub - Forgot Password</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reset Your Password</h1>
+    <p>Step 1: Enter your username to see your security question.</p>
+    <form id="getQuestionForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <button type="submit">Get Question</button>
+    </form>
+    
+    <div id="questionSection" style="display: none;">
+      <p>Step 2: Answer your security question and set a new password.</p>
+      <form id="resetForm">
+        <p id="securityQuestionText"></p>
+        <label for="securityAnswer">Your Answer:</label>
+        <input type="text" id="securityAnswer" required>
+        
+        <label for="newPassword">New Password (min 6 characters):</label>
+        <input type="password" id="newPassword" required>
+        
+        <button type="submit">Reset Password</button>
+      </form>
+    </div>
+    
+    <p><a href="index.html">Back to Login</a></p>
+    <div id="message"></div>
+  </div>
+  <script src="forgot.js"></script>
+</body>
+</html>

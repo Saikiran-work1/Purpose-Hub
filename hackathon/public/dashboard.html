@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurposeHub - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to PurposeHub</h1>
+    <p>What purpose do you come here for today?</p>
+    <form id="motiveForm">
+      <label for="motive">Select Your Motive:</label>
+      <select id="motive" required>
+        <option value="">Choose...</option>
+        <option value="study">Study</option>
+        <option value="research">Research</option>
+        <option value="chat">Chat</option>
+        <option value="post">Post</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Set Motive</button>
+    </form>
+    <div id="message"></div>
+    <button onclick="window.location.href='createPost.html'">
+  Create Post
+  <h2>Your Posts</h2>
+<div id="postsContainer"></div>
+</button>
+
+    <div id="postSection" style="display:none;">
+  <form id="postForm" enctype="multipart/form-data">
+    
+    <textarea id="postContent" placeholder="Write something..." required></textarea>
+    
+    <select id="postCategory">
+      <option value="study">Study</option>
+      <option value="research">Research</option>
+      <option value="chat">Chat</option>
+    </select>
+    
+    <input type="file" id="postFile" />
+    
+    <button type="submit">Post</button>
+  </form>
+</div>
+
+<div id="postsContainer"></div>
+
+    
+
+
+
+    
+    <button id="logout">Logout</button>
+    <div id="message"></div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
